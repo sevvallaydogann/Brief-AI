@@ -5,7 +5,6 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from pypdf import PdfReader
 from deepmultilingualpunctuation import PunctuationModel
 
-# --- 0. SETUP & CONFIG ---
 os.environ["USE_TORCH"] = "1"
 os.environ["USE_TF"] = "0"
 os.environ["TF_ENABLE_ONEDNN_OPTS"] = "0"
@@ -14,10 +13,9 @@ st.set_page_config(
     page_title="BriefAI Enterprise",
     page_icon="⚡",
     layout="wide",
-    initial_sidebar_state="collapsed" # Menüyü kapalı başlatıyoruz, daha clean dursun
+    initial_sidebar_state="collapsed" 
 )
 
-# --- 1. MODERN UI OVERHAUL (CSS INJECTION) ---
 st.markdown("""
 <style>
     /* Google Fonts Import */
@@ -119,7 +117,7 @@ st.markdown("""
 #  Model Functions
 @st.cache_resource
 def load_models():
-    # Load all models at once
+    # Load all models 
     summarizer = pipeline("summarization", model="facebook/bart-large-cnn", framework="pt")
     sentiment = pipeline("text-classification", model="distilbert-base-uncased-finetuned-sst-2-english", framework="pt")
     punctuation = PunctuationModel()
@@ -272,4 +270,5 @@ if not analyze:
             <h3>Sentiment AI</h3>
             <p style="color:#94a3b8;">Detect emotional tone and hidden patterns.</p>
         </div>
+
         """, unsafe_allow_html=True)
