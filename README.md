@@ -71,7 +71,7 @@ The project follows a modular **ETL (Extract, Transform, Load)** pattern:
 
 ### 1. Clone the Repository
 ```bash
-git clone https://github.com/sevvallaydogann/BriefAI.git
+git clone https://github.com/sevvallaydogann/Brief-AI
 cd BriefAI
 ```
 
