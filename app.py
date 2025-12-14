@@ -18,26 +18,21 @@ st.set_page_config(
 
 st.markdown("""
 <style>
-    /* Google Fonts Import */
     @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
-    /* Global Font Change */
     html, body, [class*="css"]  {
         font-family: 'Poppins', sans-serif;
     }
 
-    /* Arka Planı Simsiyah Yapıp Hafif Gradient Ekle */
     .stApp {
         background: radial-gradient(circle at center, #1e293b, #0f172a);
         color: #ffffff;
     }
 
-    /* Streamlit'in Üst Menüsünü ve Footer'ı Gizle */
     #MainMenu {visibility: hidden;}
     footer {visibility: hidden;}
     header {visibility: hidden;}
 
-    /* CUSTOM TITLE (Hero Section) */
     .hero-title {
         text-align: center;
         font-size: 60px;
@@ -56,7 +51,6 @@ st.markdown("""
         margin-bottom: 40px;
     }
 
-    /* INPUT ALANLARI (Search Bar Havası) */
     .stTextInput > div > div > input {
         border-radius: 50px;
         border: 2px solid #334155;
@@ -73,7 +67,6 @@ st.markdown("""
         box-shadow: 0 0 15px rgba(132, 250, 176, 0.3);
     }
 
-    /* BUTON TASARIMI (Neon Effect) */
     div.stButton > button {
         width: 100%;
         border-radius: 50px;
@@ -93,7 +86,6 @@ st.markdown("""
         color: black;
     }
 
-    /* SONUÇ KARTLARI (Glassmorphism) */
     .glass-card {
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(10px);
@@ -272,3 +264,4 @@ if not analyze:
         </div>
 
         """, unsafe_allow_html=True)
+
