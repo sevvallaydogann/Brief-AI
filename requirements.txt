@@ -1,0 +1,9 @@
+streamlit
+transformers
+torch
+youtube-transcript-api
+pypdf
+deepmultilingualpunctuation
+tf-keras
+beautifulsoup4
+requests
