@@ -12,8 +12,13 @@
 ---
 
 ## Dashboard Demo
-![App Screenshot](demo_dashboard.png)
-*(The application features a Glassmorphism UI design with Neon accents for a premium user experience.)*
+
+The application seamlessly switches between video stream analysis and document parsing modes.
+
+| 🎥 Video Intelligence (YouTube) | 📄 Document Intelligence (PDF) |
+| :---: | :---: |
+| ![Video Analysis](images/demo_dashboard_1.jpg) | ![PDF Analysis](images/demo_dashboard_2.png) |
+| *Sentiment & Abstractive Summary of Simon Sinek's Speech* | *Technical Analysis of "Attention Is All You Need" Paper* |
 
 ---
 
@@ -68,3 +73,15 @@ The project follows a modular **ETL (Extract, Transform, Load)** pattern:
 ```bash
 git clone https://github.com/sevvallaydogann/BriefAI.git
 cd BriefAI
+```
+
+## 2. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+## 3. Run the Application
+```bash
+streamlit run app.py
+```
+
